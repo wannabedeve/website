@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CSS webSite</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+	<ul class="topnav" id="dropdownClick">
+		<li><a href="">Home</a></li>
+		<li><a href="">News</a></li>
+		<li><a href="">Contact</a></li>
+		<li><a href="">About</a></li>
+		<li class="topnav-right"><a href="">Sign Up</a></li>
+		<li class="topnav-right"><a href="">Sign In</a></li>
+		<li class="dropdownIcon" onclick="dropdownMenu()"><a href="javascript:void(0);">&#9776;</a></li>
+	</ul>
+</nav>
+
+<div class="container" id="section-1-gradient">
+	<div class="row">
+		<div class="col-6">
+			<div class="leftSide-col"><h1 class="large">Responsive</h1><h1 class="large">HTML | CSS</h1></div>
+			<form>
+				<div class="leftSide-col">
+				<h2>Username</h2>
+				<input class="inputbox" type="text" name="username" placeholder="Your Name">
+				<h2>Password</h2>
+				<input class="inputbox" type="password" name="password" placeholder="Your Password">
+				</div>
+			</form>
+		</div>
+		<div class="col-6">
+			<div class="rightSide-col">
+				<div class="videoContainer">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/Zwu2HjU7pXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<header>
+	<h1 class="section2Header">The Standars of Awesomeness</h1>
+</header>
+	<div class="container">
+		<div class="row">
+			<div class="col-4">
+				<div class="box">
+					<div class="icon">
+						<img src="web-dev.jpg">
+					</div>
+					<label>Web Development</label>
+					<p>PHP(laraval), Python(Django), C#(Asp.NetCore), JavaScript(NodeJs), Ruby on Rails, Java, Perl, C++, All These Languages works on Server Side (request::response) to handling the data and connetct to the server that include your application and dealing with databases and network layers with protocols.</p>
+				</div>
+			</div>
+		
+
+			<div class="col-4">
+				<div class="box">
+					<div class="icon">
+						<img src="web-des.jpg">
+					</div>
+					<label>Web Design</label>
+					<p>CSS (Cascading Style Sheet, HTML(Hyper Markup Text Languague, Adobe Pruducts (Photoshop, Illistatur)
+						CSS3 Features like Grig System and Flexibilty with Flex Attributes, and some techniques to deal with what design what you want like chiocing images and color Picker.</p>
+				</div>
+			</div>
+
+
+
+			<div class="col-4">
+				<div class="box">
+					<div class="icon">
+						<img src="web-fra.jpg">
+					</div>
+					<label>Web Frameworks</label>
+					<p>JQuery, Bootstrap, React, AngularJs, ReactNative, Flutter, Normalization, and a huge bunch of framework library to frontend and designing thats a most famous framework i wrote but there is a huge other libraries and framworks to deal and done everything you want to accomplished according to the demand and with a perefect way and reduce the time and efforts.</p>
+				</div>
+			</div>
+
+				<div class="row">
+				<div class="col-12">
+					<button class="learnMore">Learn More</button>
+				</div>
+			</div>
+			
+
+
+		</div>
+	</div>
+
+			
+
+
+<hr>
+
+<div class="container">
+	<div class="row">
+	<div class="col-7">
+		<article>
+			<p>
+				Grid System vs Bootstrap, C# Asp.NetCore vs Python Django, PHP vs NodeJs, React vs Angular, Comparing Techniques make you confortble well with the technique you choice to use, that makes you knows well about utiliz of each technique with various purpose, I Like to Compare Check and learn to make things better according to the demand. 
+			</p>
+		</article>
+	</div>
+	<div class="col-5">
+		<div class="slopeIcon">
+			<img src="deve.png">
+		</div>
+	</div>
+</div>
+</div>
+
+
+<footer class="footers">
+	<div class="row">
+		<div class="col-3 mobileStack">
+			<h1>Company</h1>
+			<ul>
+				<li>About</li>
+				<li>Blogs</li>
+				<li>Careers</li>
+			</ul>
+		</div>
+
+		<div class="col-3 mobileStack">
+			<h1>Activities</h1>
+			<ul>
+				<li>Projects</li>
+				<li>Products</li>
+				<li>Activity</li>
+			</ul>
+		</div>
+
+		<div class="col-3 mobileStack">
+			<h1>Guide</h1>
+			<ul>
+				<li>Sections</li>
+				<li>Navigation</li>
+				<li>Directions</li>
+			</ul>
+		</div>
+
+		<div class="col-3 mobileStack">
+			<h1>Contact</h1>
+			<ul>
+				<li>Social Media</li>
+				<li>Free Lancing</li>
+				<li>Our Sites</li>
+			</ul>
+		</div>
+
+	</div>
+</footer>
+
+
+<script>
+	function dropdownMenu () {
+		var x = document.getElementById("dropdownClick");
+		if (x.className === "topnav"){
+			x.className += " responsive";
+		}else{
+			x.className = "topnav";
+		}
+	}
+</script>
+
+</body>
+</html>
